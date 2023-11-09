@@ -7,7 +7,9 @@
     "build": "vite build && vite build --ssr",
     "dev": "vite dev",
     "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@remix-run/node": "0.0.0-nightly-a12f636-20231109",
@@ -20,9 +22,18 @@
   "devDependencies": {
     "@remix-run/dev": "0.0.0-nightly-a12f636-20231109",
     "@remix-run/eslint-config": "0.0.0-nightly-a12f636-20231109",
+    "@storybook/addon-essentials": "^7.5.3",
+    "@storybook/addon-interactions": "^7.5.3",
+    "@storybook/addon-links": "^7.5.3",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.3",
+    "@storybook/react": "^7.5.3",
+    "@storybook/react-vite": "^7.5.3",
+    "@storybook/testing-library": "^0.2.2",
     "@types/react": "^18.2.20",
     "@types/react-dom": "^18.2.7",
     "eslint": "^8.38.0",
+    "storybook": "^7.5.3",
     "typescript": "^5.1.6",
     "vite": "^4.5.0",
     "vite-tsconfig-paths": "^4.2.1"
